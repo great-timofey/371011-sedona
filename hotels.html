@@ -22,130 +22,124 @@
       <h1 class="page-title visually-hidden">Поиск гостиницы в Седоне</h1>
       <section class="hotels-filters">
         <h2 class="hotels-filters-header visually-hidden">Поисковые фильтры</h2>
-        <p class="hotels-filters-part">
-          <h3> ИНФРАСТРУКТУРА: </h3>
+        <div class="hotels-filters-part">
+          <h3> инфраструктура: </h3>
           <ul class="infrastructure-filter">
             <li>
               <input type="">
-              <label for="">БАССЕЙН</label>
+              <label for="">бассейн</label>
             </li>
             <li>
               <input type="">
-              <label for="">ПАРКОВКА</label>
+              <label for="">парковка</label>
             </li>
             <li>
               <input type="">
-              <label for="">Wi-Fi</label>
+              <label for="">wi-fi</label>
             </li>
           </ul>
-        </p>
-        <p class="hotels-filters-part">
+        </div>
+        <div class="hotels-filters-part">
             <h3> Тип жилья: </h3>
           <ul class="accomodtype-filter">
             <li>
               <input type="">
-              <label for="">ГостиницА</label>
+              <label for="">гостиница</label>
             </li>
             <li>
               <input type="">
-              <label for="">МОТЕЛЬ</label>
+              <label for="">мотель</label>
             </li>
             <li>
               <input type="">
-              <label for="">АПАРТАМЕНТЫ</label>
+              <label for="">апартаменты</label>
             </li>
           </ul>
-        </p>
-        <p class="hotels-filters-part">
+        </div>
+        <div class="hotels-filters-part">
           <h3>Стоимость в сутки (Р):</h3>
           <input class="pricing-filter-button" type=""><label for="">от 0</label>
-          <input class="pricing-filter-button" type=""><label for="">ДО 3000</label>
+          <input class="pricing-filter-button" type=""><label for="">до 3000</label>
           <input class="pricing-filter-slider" type="">
-          <a class="pricing-filter-showbutton" href="#">ПОКАЗАТЬ</a>
-        </p>
+          <a class="pricing-filter-showbutton" href="#">показать</a>
+        </div>
       </section>
 
       <section class="hotels-results">
         <h2 class="hotels-results-header visually-hidden">Результаты поиска</h2>
         <div class="results-head">
-          <span class="results-head-finded">Найдено: 3</span>
-          <span class="results-head-sorting">СОРТИРОВКА:</span>
+          <p class="results-head-finded">Найдено: <span>3</span></p>
+          <h3 class="results-header">сортировка:</h3>
           <ul class="results-head-sortlist">
-            <li>ПО ЦЕНЕ</li>
-            <li>ПО ТИПУ</li>
-            <li>ПО РЕЙТИНГУ</li>
+            <li><button class="head-type-sortbutton">по цене</button></li>
+            <li><button class="head-type-sortbutton">по типу</button></li>
+            <li><button class="head-type-sortbutton">по рейтингу</button></li>
           </ul>
-          <div class="results-head-sortbuttons">
-            <input type="">
-            <input type="">
+          <div class="results-head-directions-sortbuttons">
+            <button class="head-direction-sortbutton"><!--up--></button>
+            <button class="head-direction-sortbutton"><!--down--></button>
           </div>
         </div>
         <ul class="results-list">
           <li class="results-item">
-            <h3 class="results-item-header">Amara Resort & Spa</h3>
-            <p class="results-item-image">
-              <a href="#">
-                <img src="img/amara.jpg" alt="Фотография гостиницы">
-              </a>
-            </p>
+            <a class="results-item-image" href="#">
+              <img src="img/amara.jpg" alt="Фотография гостиницы">
+            </a>
+            <h4 class="results-item-header">Amara Resort & Spa</h4>
             <p class="results-item-description">
               <span>Гостиница</span>
-              <span>ОТ 4000 Р.</span>
+              <span>от 4000 р.</span>
             </p>
-            <p class="results-item-buttons">
-              <a class="button" href="#">ПОДРОБНЕЕ</a>
-              <a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+            <p class="results-item-refs">
+              <a class="item-about-ref" href="#">подробнее</a>
+              <a class="item-booking-ref" href="#">забронировать</a>
             </p>
             <div class="results-item-rating">
               <img class="results-item-stars" src="img/star.svg" alt="Рейтинг в звездах">
-              <span class="results-item-rating-text">Рейтинг: 8,9</span>
+              <p class="results-item-rating-text">Рейтинг: 8,5</p>
             </div>
           </li>
           <li class="results-item">
-            <h3 class="results-item-header">Desert Quail Inn</h3>
-            <p class="results-item-image">
-              <a href="#">
-                <img src="img/dq-inn.jpg" alt="Фотография гостиницы">
-              </a>
-            </p>
+            <a class="results-item-image" href="#">
+              <img src="img/dqinn.jpg" alt="Фотография гостиницы">
+            </a>
+            <h4 class="results-item-header">Desert Quail Inn</h4>
             <p class="results-item-description">
               <span>Мотель</span>
-              <span>ОТ 3000 Р.</span>
+              <span>от 3000 р.</span>
             </p>
-            <p class="results-item-buttons">
-              <a class="button" href="#">ПОДРОБНЕЕ</a>
-              <a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+            <p class="results-item-refs">
+              <a class="item-about-ref" href="#">подробнее</a>
+              <a class="item-booking-ref" href="#">забронировать</a>
             </p>
             <div class="results-item-rating">
               <img class="results-item-stars" src="img/star.svg" alt="Рейтинг в звездах">
-              <span class="results-item-rating-text">Рейтинг: 8,9</span>
+              <p class="results-item-rating-text">Рейтинг: 8,9</p>
             </div>
           </li>
           <li class="results-item">
-            <h3 class="results-item-header">Villas at Poco Diablo</h3>
-            <p class="results-item-image">
-              <a href="#">
-                <img src="img/vapdiablo.jpg" alt="Фотография гостиницы">
-              </a>
-            </p>
+            <a class="results-item-image" href="#">
+              <img src="img/vapdiablo.jpg" alt="Фотография гостиницы">
+            </a>
+            <h4 class="results-item-header">Villas at Poco Diablo</h4>
             <p class="results-item-description">
               <span>Апартаменты</span>
-              <span>ОТ 2000 Р.</span>
+              <span>от 2000 р.</span>
             </p>
-            <p class="results-item-buttons">
-              <a class="button" href="#">ПОДРОБНЕЕ</a>
-              <a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+            <p class="results-item-refs">
+              <a class="item-about-ref" href="#">подробнее</a>
+              <a class="item-booking-ref" href="#">забронировать</a>
             </p>
             <div class="results-item-rating">
               <img class="results-item-stars" src="img/star.svg" alt="Рейтинг в звездах">
-              <span class="results-item-rating-text">Рейтинг: 9,2</span>
+              <p class="results-item-rating-text">Рейтинг: 9,2</p>
             </div>
           </li>
         </ul>
       </section>
     </main>
     <footer class="main-footer">
-      <span class="hashtag">#visitSEDONA</span>
+      <a class="hashtag" href="#">#visitsedona</a>
       <div class="social-block">
         <ul class="social-list">
           <li><a href="#">Twitter</a></li>
@@ -154,8 +148,8 @@
         </ul>
       </div>
       <a class="copyright" href="#">
-          <img class="copyright-image" width="200" height="100" src="img/copyright-image.jpg" alt="Разработано в HTML Academy">
-        </a>
+        <img class="copyright-image" width="200" height="100" src="img/copyright-image.jpg" alt="Разработано в HTML Academy">
+      </a>
     </footer>
   </body>
 </html>
