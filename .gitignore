@@ -13,6 +13,7 @@ tim
 gulpfile.js
 package.json
 package-lock.json
+mocks/
 node_modules/
 npm-debug.*
 Thumbs.db
