@@ -26,16 +26,16 @@
           <h3> Инфраструктура: </h3>
           <ul class="infrastructure-filter">
             <li>
-              <input type="">
-              <label for="">Бассейн</label>
+              <label for="pool">Бассейн</label>
+              <input type="checkbox" name="filters-pool-field" id="pool">
             </li>
             <li>
-              <input type="">
-              <label for="">Парковка</label>
+              <label for="parking">Парковка</label>
+              <input type="checkbox" name="filters-parking-field" id="parking">
             </li>
             <li>
-              <input type="">
-              <label for="">Wi-Fi</label>
+              <label for="wifi">Wi-Fi</label>
+              <input type="checkbox" name="filters-wifi-field" id="wifi">
             </li>
           </ul>
         </div>
@@ -43,24 +43,24 @@
           <h3> Тип жилья: </h3>
           <ul class="accomodtype-filter">
             <li>
-              <input type="">
-              <label for="">Гостиница</label>
+              <label for="hotel">Гостиница</label>
+              <input type="checkbox" name="filters-hotel-field" id="hotel">
             </li>
             <li>
-              <input type="">
-              <label for="">Мотель</label>
+              <label for="motel">Мотель</label>
+              <input type="checkbox" name="filters-motel-field" id="motel">
             </li>
             <li>
-              <input type="">
-              <label for="">Апартаменты</label>
+              <label for="apartments">Апартаменты</label>
+              <input type="checkbox" name="filters-apartments-field" id="apartments">
             </li>
           </ul>
         </div>
         <div class="hotels-filters-part">
           <h3>Стоимость в сутки (Р):</h3>
-          <input class="pricing-filter-button" type=""><label for="">От 0</label>
-          <input class="pricing-filter-button" type=""><label for="">До 3000</label>
-          <input class="pricing-filter-slider" type="">
+          <button class="filters-pricing-frombutton" type="button">От 0</button>
+          <button class="filters-pricing-frombutton" type="button">До 3000</button>
+          <div class="filters-pricing-range"><!--range goes here--></div>
           <a class="pricing-filter-showbutton" href="#">Показать</a>
         </div>
       </section>
@@ -68,7 +68,7 @@
       <section class="hotels-results">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <div class="results-head">
-          <p class="results-head-finded">Найдено: <span>3</span></p>
+          <p class="results-head-finded">Найдено:<span>3</span></p>
           <h3 class="results-header">Сортировка:</h3>
           <ul class="results-head-sortlist">
             <li><a class="head-type-sortbutton">По цене</a></li>
@@ -91,8 +91,8 @@
               <span>от 4000 р.</span>
             </p>
             <p class="results-item-refs">
-              <a class="item-about-ref" href="#">подробнее</a>
-              <a class="item-booking-ref" href="#">забронировать</a>
+              <a class="item-about-ref" href="#">Подробнее</a>
+              <a class="item-booking-ref" href="#">Забронировать</a>
             </p>
             <div class="results-item-rating">
               <img class="results-item-stars" src="img/star.svg" width="18" height="17" alt="Рейтинг в звездах">
@@ -109,8 +109,8 @@
               <span>от 3000 р.</span>
             </p>
             <p class="results-item-refs">
-              <a class="item-about-ref" href="#">подробнее</a>
-              <a class="item-booking-ref" href="#">забронировать</a>
+              <a class="item-about-ref" href="#">Подробнее</a>
+              <a class="item-booking-ref" href="#">Забронировать</a>
             </p>
             <div class="results-item-rating">
               <img class="results-item-stars" src="img/star.svg" width="18" height="17" alt="Рейтинг в звездах">
@@ -127,8 +127,8 @@
               <span>от 2000 р.</span>
             </p>
             <p class="results-item-refs">
-              <a class="item-about-ref" href="#">подробнее</a>
-              <a class="item-booking-ref" href="#">забронировать</a>
+              <a class="item-about-ref" href="#">Подробнее</a>
+              <a class="item-booking-ref" href="#">Забронировать</a>
             </p>
             <div class="results-item-rating">
               <img class="results-item-stars" src="img/star.svg" width="18" height="17" alt="Рейтинг в звездах">
@@ -142,12 +142,12 @@
       <a class="hashtag" href="#">#visitsedona</a>
       <div class="social-block">
         <ul class="social-list">
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Youtube</a></li>
+          <li><a href="https://twitter.com" aria-label="Мы в Twitter"></a></li>
+          <li><a href="https://facebook.com" aria-label="Мы в Facebook"></a></li>
+          <li><a href="https://youtube.com" aria-label="Мы на Youtube"></a></li>
         </ul>
       </div>
-      <a class="copyright" href="#">
+      <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
         <img class="copyright-image" width="195" height="41" src="img/logo-footer.png" alt="Разработано в HTML Academy">
       </a>
     </footer>
