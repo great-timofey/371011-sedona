@@ -80,7 +80,28 @@
         <p class="trip-head">
           <b>заинтересовались?</b>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <!-- searching form goes here -->
+        <form class="trip-form" action="https://echo.htmlacademy.ru" method="post">
+         <p class="trip-form-head">Поиск гостиницы в Седоне</p>
+         <p class="form-item">
+           <label for="arrival-date-form">Дата заезда</label>
+           <input type="date" name="arrival-date" id="arrival-date-form">
+           <img src="img/calendar.svg" id="calendar-icon" width="21" height="22" alt="">
+         </p>
+         <p class="form-item">
+           <label for="departure-date-form">Дата выезда</label>
+           <input type="date" name="departure-date" id="departure-date-form">
+           <img src="img/calendar.svg" id="calendar-icon" width="21" height="22" alt="">
+         </p>
+         <p class="form-item">
+           <label for="adults-count-form">Взрослые</label>
+           <input type="number" name="adults-count" id="adult-counts-form" min="1">
+         </p>
+         <p class="form-item">
+           <label for="kids-count-form">Дети</label>
+           <input type="number" name="kids-count" id="kids-counts-form" min="0">
+         </p>
+        <button class="trip-find-button" type="submit">Найти</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
