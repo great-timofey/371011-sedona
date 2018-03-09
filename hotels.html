@@ -22,47 +22,48 @@
       <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
       <section class="hotels-filters">
         <h2 class="visually-hidden">Поисковые фильтры</h2>
-        <div class="hotels-filters-part">
-          <h3> Инфраструктура: </h3>
-          <ul class="infrastructure-filter">
-            <li>
-              <label for="pool">Бассейн</label>
-              <input type="checkbox" name="filters-pool-field" id="pool">
-            </li>
-            <li>
-              <label for="parking">Парковка</label>
-              <input type="checkbox" name="filters-parking-field" id="parking">
-            </li>
-            <li>
-              <label for="wifi">Wi-Fi</label>
-              <input type="checkbox" name="filters-wifi-field" id="wifi">
-            </li>
-          </ul>
-        </div>
-        <div class="hotels-filters-part">
-          <h3> Тип жилья: </h3>
-          <ul class="accomodtype-filter">
-            <li>
-              <label for="hotel">Гостиница</label>
-              <input type="checkbox" name="filters-hotel-field" id="hotel">
-            </li>
-            <li>
-              <label for="motel">Мотель</label>
-              <input type="checkbox" name="filters-motel-field" id="motel">
-            </li>
-            <li>
-              <label for="apartments">Апартаменты</label>
-              <input type="checkbox" name="filters-apartments-field" id="apartments">
-            </li>
-          </ul>
-        </div>
-        <div class="hotels-filters-part">
-          <h3>Стоимость в сутки (Р):</h3>
-          <button class="filters-pricing-frombutton" type="button">От 0</button>
-          <button class="filters-pricing-frombutton" type="button">До 3000</button>
-          <div class="filters-pricing-range"><!--range goes here--></div>
-          <a class="pricing-filter-showbutton" href="#">Показать</a>
-        </div>
+        <form class="filters" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filters-set">
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <label for="pool">Бассейн</label>
+                <input class="visually-hidden filters-checkbox" id="pool" type="checkbox" name="filters-pool-field">
+              </li>
+              <li>
+                <label for="parking">Парковка</label>
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="filters-parking-field" id="parking">
+              </li>
+              <li>
+                <label for="wifi">Wi-Fi</label>
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="filters-wifi-field" id="wifi">
+              </li>
+            </ul>
+          <fieldset class="filters-set">
+            <legend>Тип жилья:</legend>
+            <ul class="accomodtype-filter">
+              <li>
+                <label for="hotel">Гостиница</label>
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="filters-hotel-field" id="hotel">
+              </li>
+              <li>
+                <label for="motel">Мотель</label>
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="filters-motel-field" id="motel">
+              </li>
+              <li>
+                <label for="apartments">Апартаменты</label>
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="filters-apartments-field" id="apartments">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters-set">
+            <legend>Стоимость в сутки (Р):</legend>
+            <button class="filters-pricing-frombutton" type="button">От 0</button>
+            <button class="filters-pricing-frombutton" type="button">До 3000</button>
+            <div class="filters-pricing-range"><!--range goes here--></div>
+          </fieldset>
+          <button class="filters-submit-button" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="hotels-results">
