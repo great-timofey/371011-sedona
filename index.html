@@ -77,30 +77,32 @@
       <section class="trip">
         <img class="map" src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
         <h3 class="trip-header visually-hidden">поиск гостиницы в седоне</h3>
-        <p class="trip-head">
-          <b>заинтересовались?</b>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
-        </p>
         <form class="trip-form" action="https://echo.htmlacademy.ru" method="post">
-         <p class="trip-form-head">Поиск гостиницы в Седоне</p>
-         <p class="form-item">
-           <label for="arrival-date-form">Дата заезда</label>
-           <input type="text" name="arrival-date" id="arrival-date-form">
-           <img src="img/calendar.svg" id="calendar-icon" width="21" height="22" alt="">
-         </p>
-         <p class="form-item">
-           <label for="departure-date-form">Дата выезда</label>
-           <input type="text" name="departure-date" id="departure-date-form">
-           <img src="img/calendar.svg" id="calendar-icon" width="21" height="22" alt="">
-         </p>
-         <p class="form-item">
-           <label for="adults-count-form">Взрослые</label>
-           <input type="text" name="adults-count" id="adult-counts-form" min="1">
-         </p>
-         <p class="form-item">
-           <label for="kids-count-form">Дети</label>
-           <input type="text" name="kids-count" id="kids-counts-form" min="0">
-         </p>
-        <button class="trip-find-button" type="submit">Найти</button>
+          <fieldset>
+            <legend>
+              <b>заинтересовались?</b>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+            </legend>
+             <p class="trip-form-head">Поиск гостиницы в Седоне</p>
+             <p class="form-item">
+               <label for="arrival-date-form">Дата заезда</label>
+               <input type="text" name="arrival-date" id="arrival-date-form">
+               <img src="img/calendar.svg" id="calendar-icon" width="21" height="22" alt="">
+             </p>
+             <p class="form-item">
+               <label for="departure-date-form">Дата выезда</label>
+               <input type="text" name="departure-date" id="departure-date-form">
+               <img src="img/calendar.svg" id="calendar-icon" width="21" height="22" alt="">
+             </p>
+             <p class="form-item">
+               <label for="adults-count-form">Взрослые</label>
+               <input type="text" name="adults-count" id="adult-counts-form" min="1">
+             </p>
+             <p class="form-item">
+               <label for="kids-count-form">Дети</label>
+               <input type="text" name="kids-count" id="kids-counts-form" min="0">
+             </p>
+            <button class="trip-find-button" type="submit">Найти</button>
+          </fieldset>
         </form>
       </section>
     </main>
