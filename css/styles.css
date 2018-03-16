@@ -9,14 +9,15 @@ html {
 body {
   position: relative;
   max-width: 1200px;
-  margin: 0;
   padding: 0 calc(6% - 37px);
+  margin: 0 auto;
   color: #333333;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
   text-transform: uppercase;
+  box-shadow: 5px 0 15px rgba(0, 1, 1, 0.2);
 }
 
 .visually-hidden {
@@ -178,7 +179,7 @@ a {
 }
 
 .advantages-item:nth-last-child(1) .advantages-item-description, .advantages-item:nth-last-child(2) .advantages-item-description, .advantages-item:nth-last-child(3) .advantages-item-description {
-  margin: 0 60px 80px;
+  margin: 0 60px 55px;
 }
 
 .advantages-special {
@@ -216,27 +217,30 @@ a {
   height: 256px;
 }
 
-.trip-legend {
-  text-align: center;
-}
-
-.trip-legend b {
-  font-size: 30px;
-  font-weight: 700;
-}
-
 .trip {
+  padding-top: 60px;
   position: relative;
 }
 
+.trip-button-show {
+  padding: 30px 140px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .map {
-  position: absolute;
   z-index: -1;
-  top: 270px;
 }
 
 .trip-form {
-  position: absolute;
+  border: 0px;
+}
+
+.trip-form fieldset {
+  border: 0px;
 }
 
 .trip-form input {
@@ -252,10 +256,47 @@ a {
   background-color: #ffffff;
 }
 
+.modal-container {
+  position: absolute;
+  padding-left: 25%;
+  top: 237px;
+}
+
+.modal-container-inner {
+  background-color: #ffffff;
+  padding-top: 70px;
+  padding-left: 60px;
+}
+
+.trip-legend {
+  text-align: center;
+  margin-bottom: 110px;
+}
+
+.trip-legend b {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
 .form-item {
   color: #000000;
   font-size: 14px;
   font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.form-item label {
+  margin-right: 15px;
+}
+
+.form-item input {
+  height: 40px;
+}
+
+.form-container-small {
+  display: flex;
 }
 
 .trip-button {
@@ -272,6 +313,8 @@ a {
 }
 
 .trip-button-submit {
+  padding: 20px 195px;
+  margin-bottom: 30px;
   font-size: 21px;
   font-weight: bold;
   background-color: #81b3d2;
@@ -450,17 +493,19 @@ a {
 }
 
 .main-footer {
-  position: absolute;
   z-index: 1;
-  bottom: -880px;
-  width: 93.8%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
 .social-block ul {
+  padding: 0;
+  margin: 0 auto;
   list-style: none;
+  display: flex;
+  width: 33%;
 }
 
 .social-block a {
@@ -477,11 +522,25 @@ a {
 
 .copyright {
   text-decoration: none;
+  display: flex;
+  align-items: center;
   color: #000000;
+}
+
+.copyright span {
+  margin-right: 5px;
+}
+
+.copyright:hover span, .copyright:focus span {
+  color: #81b3d2;
 }
 
 .copyright:hover #svg, .copyright:focus #svg {
   fill: #81b3d2;
+}
+
+.copyright:active span {
+  color: #bdbbbc;
 }
 
 .copyright:active #svg {
