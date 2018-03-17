@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  position: relative;
+ position: relative;
   margin: 0 auto;
   padding: 0 40px;
   max-width: 1200px;
@@ -17,6 +17,7 @@ body {
   font-weight: 400;
   line-height: 26px;
   text-transform: uppercase;
+  box-shadow: 5px 0 15px rgba(0, 1, 1, 0.2);
 }
 
 .visually-hidden {
@@ -49,9 +50,25 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
   display: flex;
   justify-content: space-between;
+}
+
+.site-navigation li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  flex-basis: 20%;
+}
+
+.site-navigation li:nth-child(2) {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3) {
+  text-align: right;
 }
 
 .site-navigation a {
@@ -109,6 +126,32 @@ a {
   padding: 0;
 }
 
+.background-container {
+  position: relative;
+  margin-bottom: 65px;
+  overflow: hidden;
+  padding-left: 370px;
+  padding-top: 75px;
+  padding-bottom: 70px;
+}
+
+.welcome-background {
+  position: absolute;
+  top: -56px;
+  left: 0;
+  z-index: -1;
+}
+
+.welcome-mask {
+  position: absolute;
+  left: 0;
+  top: 450px;
+}
+
+.advantages-head {
+  text-align: center;
+}
+
 .advantages-head b {
   text-align: center;
   display: inline-block;
@@ -118,6 +161,8 @@ a {
   padding: 0 70px;
   font-size: 21px;
   font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 10px;
 }
 
 .advantages-header {
@@ -129,6 +174,38 @@ a {
   padding: 0 45px 35px;
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.advantages-item {
+  width: calc(33% + 4px);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.advantages-item-number {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.advantages-item-description {
+  margin: 0 50px 80px;
+  line-height: 21px;
+}
+
+.advantages-item-image {
+  padding-top: 55px;
+  margin-bottom: 30px;
 }
 
 .advantages-list {
@@ -203,6 +280,39 @@ a {
   color: #ffffff;
 }
 
+.advantages-special-number {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.advantages-special-description {
+  margin: 0 48px 30px;
+  line-height: 21px;
+}
+
+.advantages-special-header {
+  font-size: 21px;
+  font-weight: 700;
+  padding-top: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 21px;
+}
+
+.trip {
+  padding-top: 60px;
+  position: relative;
+}
+
+.trip-button-show {
+  padding: 30px 140px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .container-special {
   display: flex;
   flex-direction: column;
@@ -269,7 +379,6 @@ a {
 }
 
 .trip-legend {
-  text-align: center;
   background-color: #ffffff;
   padding-top: 55px;
   padding-bottom: 125px;
@@ -288,6 +397,18 @@ a {
   color: #000000;
   font-size: 14px;
   font-weight: 700;
+}
+
+.form-item label {
+  margin-right: 15px;
+}
+
+.form-item input {
+  height: 40px;
+}
+
+.form-container-small {
+  display: flex;
   margin-bottom: 25px;
 }
 
@@ -627,6 +748,14 @@ footer {
 
 .copyright span {
   margin-right: 10px;
+}
+
+.copyright:hover span, .copyright:focus span {
+  color: #81b3d2;
+}
+
+.copyright span {
+  margin-right: 5px;
 }
 
 .copyright:hover span, .copyright:focus span {
