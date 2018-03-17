@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +32,8 @@ a {
 .site-navigation {
   list-style: none;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-navigation a {
@@ -58,13 +68,13 @@ a {
   font-weight: 400;
 }
 
+.advantages-list {
+  text-align: center;
+}
+
 .advantages-item-header {
   font-size: 21px;
   font-weight: 700;
-}
-
-.advantages-list {
-  text-align: center;
 }
 
 .advantages-item:nth-child(1), .advantages-item:nth-child(5) {
@@ -72,13 +82,26 @@ a {
   color: #ffffff;
 }
 
-legend {
-  text-align: center;
+.trip {
+  padding-top: 60px;
+  position: relative;
 }
 
-legend b {
-  font-size: 30px;
-  font-weight: 700;
+.form-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.map {
+  z-index: -1;
+}
+
+.trip-form {
+  border: 0px;
+}
+
+.trip-form fieldset {
+  border: 0px;
 }
 
 .trip-form input {
@@ -92,6 +115,15 @@ legend b {
 
 .trip-form input:focus {
   background-color: #ffffff;
+}
+
+.trip-legend {
+  text-align: center;
+}
+
+.trip-legend b {
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .form-item {
@@ -146,7 +178,6 @@ legend b {
 }
 
 .filters {
-  background-color: black;
   color: #ffffff;
 }
 
@@ -291,10 +322,6 @@ legend b {
   background-color: #f2f2f2;
 }
 
-.social-block ul {
-  list-style: none;
-}
-
 .social-block a {
   background-color: #81b3d2;
 }
@@ -308,12 +335,20 @@ legend b {
 }
 
 .copyright {
-  text-decoration: none;
+  align-items: center;
   color: #000000;
+}
+
+.copyright:hover span, .copyright:focus span {
+  color: #81b3d2;
 }
 
 .copyright:hover #svg, .copyright:focus #svg {
   fill: #81b3d2;
+}
+
+.copyright:active span {
+  color: #bdbbbc;
 }
 
 .copyright:active #svg {
