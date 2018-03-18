@@ -41,25 +41,16 @@
             <p class="advantages-item-description">Седона — не аттракцион для туристов,<br>там течет своя жизнь</p>
           </li>
           <li class="advantages-special">
-            <div class="container-special">
-              <h4 class="advantages-special-header">жилье</h4>
-              <p class="advantages-special-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </div>
-            <img class="advantages-special-image" src="img/icon-1.svg" width="75" height="72" alt="Мотели">
+            <h4 class="advantages-special-header">жилье</h4>
+            <p class="advantages-special-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="advantages-special">
-            <div class="container-special">
-              <h4 class="advantages-special-header">еда</h4>
-              <p class="advantages-special-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </div>
-            <img class="advantages-special-image" src="img/icon-3.svg" width="74" height="70" alt="Еда">
+            <h4 class="advantages-special-header">еда</h4>
+            <p class="advantages-special-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantages-special">
-            <div class="container-special">
-              <h4 class="advantages-special-header">сувениры</h4>
-              <p class="advantages-special-description">Не только китайского, но и местного производства!</p>
-            </div>
-            <img class="advantages-special-image" src="img/icon-2.svg" width="64" height="76" alt="Подарки">
+            <h4 class="advantages-special-header">сувениры</h4>
+            <p class="advantages-special-description">Не только китайского, но и местного производства!</p>
           </li>
           <li class="advantages-item">
             <h4 class="advantages-item-header">там есть<br>мост дьявола</h4>
@@ -89,42 +80,44 @@
         <p class="trip-text">
           <b>заинтересовались?</b>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
+        <a class="trip-button-show" href="#">Поиск гостиницы в Седоне</a>
         <form class="trip-form" action="https://echo.htmlacademy.ru" method="post">
-          <a class="trip-button-show" href="#">Поиск гостиницы в Седоне</a>
           <fieldset>
-            <p class="form-item">
-              <label for="arrival-date-form">Дата заезда</label>
+            <p class="trip-form-item">
+              <label for="arrival-date-form">Дата заезда:</label>
               <input type="text" name="arrival-date" id="arrival-date-form">
               <a class="trip-button-calendar" href="#">
                  <img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату заезда">
                </a>
             </p>
-            <p class="form-item">
-              <label for="departure-date-form">Дата выезда</label>
+            <p class="trip-form-item">
+              <label for="departure-date-form">Дата выезда:</label>
               <input type="text" name="departure-date" id="departure-date-form">
               <a class="trip-button-calendar" href="#">
                  <img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату выезда">
                </a>
             </p>
-            <p class="form-item">
-              <label for="adults-count-form">Взрослые</label>
-              <a class="trip-button" href="#">+</a>
-              <a class="trip-button" href="#">-</a>
-              <input type="text" name="adults-count" id="adults-count-form">
-            </p>
-            <p class="form-item">
-              <label for="kids-count-form">Дети</label>
-              <a class="trip-button" href="#">+</a>
-              <a class="trip-button" href="#">-</a>
-              <input type="text" name="kids-count" id="kids-count-form">
-            </p>
+            <div class="trip-form-index">
+              <p class="trip-form-item">
+                <label for="adults-count-form">Взрослые:</label>
+                <a class="trip-button" href="#">-</a>
+                <input type="text" name="adults-count" id="adults-count-form">
+                <a class="trip-button" href="#">+</a>
+              </p>
+              <p class="trip-form-item">
+                <label for="kids-count-form">Дети:</label>
+                <a class="trip-button" href="#">-</a>
+                <input type="text" name="kids-count" id="kids-count-form">
+                <a class="trip-button" href="#">+</a>
+              </p>
+            </div>
+            <button class="trip-button-submit" type="submit">Найти</button>
           </fieldset>
-          <button class="trip-button-submit" type="submit">Найти</button>
         </form>
         <img class="map" src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="footer footer-main">
       <a class="hashtag" href="#">#visitsedona</a>
       <div class="social">
         <ul class="social-list">
