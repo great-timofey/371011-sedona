@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0;
   width: 1200px;
   color: #333333;
   font-family: 'PT Sans', Arial, sans-serif;
@@ -52,7 +52,13 @@ a {
   background-image: url("../img/background-mask.png"), url("../img/background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 0 bottom, 0 -60px;
-  padding: 75px 370px;
+  padding: 75px 0 80px;
+}
+
+.main-caption-text {
+  display: block;
+  margin: 0 auto;
+  width: 458px;
 }
 
 .site-navigation {
@@ -95,25 +101,19 @@ a {
   margin-bottom: 60px;
 }
 
-.advantages-head {
-  margin: 0;
-  padding: 0;
-}
-
-.advantages-head b {
+.advantages b {
   display: block;
   text-align: center;
-  margin-bottom: 25px;
-  padding: 0 300px;
+  margin: 0 auto 25px;
+  width: 50%;
   font-size: 21px;
   font-weight: 700;
 }
 
 .advantages-header {
-  padding: 0;
   margin: 0;
   text-align: center;
-  padding: 0 45px 35px;
+  padding: 0 45px 50px;
   font-size: 14px;
   font-weight: 400;
 }
@@ -168,7 +168,7 @@ a {
 
 .advantages-item-header {
   margin: 0;
-  padding: 45px 120px 20px;
+  padding: 50px 120px 20px;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
@@ -195,6 +195,8 @@ a {
 }
 
 .advantages-item-image {
+  margin: 0;
+  padding: 0;
   margin-top: -75px;
 }
 
@@ -220,7 +222,7 @@ a {
 }
 
 .advantages-item:last-child .advantages-item-header {
-  padding: 45px 130px 20px;
+  padding: 45px 130px 25px;
 }
 
 .apartments::before {
@@ -445,7 +447,8 @@ a {
 }
 
 .filters-set {
-  margin-right: 115px;
+  min-width: 230px;
+  margin-right: 25px;
   padding: 0;
   border: 0px;
 }
@@ -610,10 +613,15 @@ a {
 }
 
 .results-head-finded {
-  margin-right: 50px;
+  margin-right: 10px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  min-width: 155px;
+}
+
+.results-head span {
+  margin-left: 5px;
 }
 
 .results-header, .results-head-sortlist {
@@ -704,10 +712,6 @@ a {
   margin-bottom: 5px;
 }
 
-.results-item-refs {
-  margin-bottom: 0;
-}
-
 .results-item-description {
   padding: 0;
   margin: 0;
@@ -715,15 +719,6 @@ a {
   font-weight: 700;
   line-height: 21px;
   font-weight: 400;
-}
-
-.results-item-description span {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-.results-item-description span:first-child {
-  width: 100px;
 }
 
 .results-item-rating {
@@ -742,37 +737,60 @@ a {
 }
 
 .results-item:last-child {
-  padding-top: 5px;
   margin-bottom: 0;
 }
 
-.item-about-ref {
-  padding: 5px 17px;
+.item-container {
+  min-width: 300px;
+  margin-bottom: 0;
+}
+
+.description-section {
+  margin: 0;
   margin-right: 3px;
-  background-color: #81b3d2;
+  display: inline-block;
+  min-width: 110px;
+}
+
+.description-section span {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.ref {
+  display: block;
+  text-align: center;
+  vertical-align: bottom;
+  font-weight: 700;
   color: #ffffff;
 }
 
-.item-about-ref:hover, .item-about-ref:focus {
+.ref-about {
+  padding: 3px 0;
+  background-color: #81b3d2;
+}
+
+.ref-about:hover, .ref-about:focus {
   background-color: #669ec0;
 }
 
-.item-about-ref:active {
+.ref-about:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.item-booking-ref {
-  padding: 5px 17px;
+.ref-booking {
+  padding: 3px 15px;
+  font-weight: 700;
   background-color: #766357;
-  color: #ffffff;
 }
 
-.item-booking-ref:hover, .item-booking-ref:focus {
+.ref-booking:hover, .ref-booking:focus {
   background-color: #604e43;
 }
 
-.item-booking-ref:active {
+.ref-booking:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -840,7 +858,7 @@ a {
   display: block;
   bottom: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(50%);
+  transform: translate(-50%, 50%);
   content: '';
 }
 
