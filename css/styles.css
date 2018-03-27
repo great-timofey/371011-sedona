@@ -747,6 +747,18 @@ a {
   padding: 28px 69px 29px 72px;
 }
 
+.filters-checkbox:checked + label::before {
+  background-image: url(../img/checkbox-on.png);
+}
+
+.filters-checkbox:disabled + label::before {
+  background-image: url(../img/checkbox-off-disabled.png);
+}
+
+.filters-checkbox:checked:disabled + label::before {
+  background-image: url(../img/checkbox-on-disabled.png);
+}
+
 .filters-set {
   min-width: 230px;
   margin-right: 25px;
@@ -793,18 +805,6 @@ a {
   width: 27px;
   height: 24px;
   content: "";
-}
-
-.filters-set input[type=checkbox]:checked + label::before {
-  background-image: url(../img/checkbox-on.png);
-}
-
-.filters-set input[type=checkbox]:disabled + label::before {
-  background-image: url(../img/checkbox-off-disabled.png);
-}
-
-.filters-set input[type=checkbox]:checked:disabled + label::before {
-  background-image: url(../img/checkbox-on-disabled.png);
 }
 
 .filters-set-container {
