@@ -59,7 +59,7 @@ a {
 }
 
 .main-caption-container {
-  background-image: url("../img/background-mask.png"), url("../img/background.jpg");
+  background-image: url(../img/background-mask.png), url(../img/background.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: 0 bottom, 0 -57px;
   padding: 75px 0 80px;
@@ -291,7 +291,7 @@ a {
   right: 0;
   top: 0;
   content: "";
-  background-image: url("../img/real-city.jpg");
+  background-image: url(../img/real-city.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -308,21 +308,21 @@ a {
   left: 0;
   top: 0;
   content: "";
-  background-image: url("../img/dev-bridge.jpg");
+  background-image: url(../img/dev-bridge.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .apartments::before {
-  background-image: url("../img/icon-1.svg");
+  background-image: url(../img/icon-1.svg);
 }
 
 .food::before {
-  background-image: url("../img/icon-3.svg");
+  background-image: url(../img/icon-3.svg);
 }
 
 .presents::before {
-  background-image: url("../img/icon-2.svg");
+  background-image: url(../img/icon-2.svg);
 }
 
 .container {
@@ -558,7 +558,6 @@ a {
   padding: 0;
   width: 114px;
   height: 38px;
-  order: 1;
 }
 
 .trip-form-index .form-index-input:focus {
@@ -719,11 +718,11 @@ a {
 .minus::after {
   width: 12px;
   height: 3px;
-  background-image: url("../img/minus.png");
+  background-image: url(../img/minus.png);
 }
 
 .minus:active::after {
-  background-image: url("../img/minus-active.png");
+  background-image: url(../img/minus-active.png);
 }
 
 .plus {
@@ -733,16 +732,16 @@ a {
 .plus::after {
   width: 11px;
   height: 11px;
-  background-image: url("../img/plus.png");
+  background-image: url(../img/plus.png);
 }
 
 .plus:active::after {
-  background-image: url("../img/plus-active.png");
+  background-image: url(../img/plus-active.png);
 }
 
 .filters {
   color: #ffffff;
-  background: url("../img/filters-background.jpg") no-repeat center;
+  background: url(../img/filters-background.jpg) no-repeat center;
   display: flex;
   padding: 28px 69px 29px 72px;
 }
@@ -1139,7 +1138,7 @@ a {
 .rating-stars {
   height: 18px;
   align-self: flex-end;
-  background-image: url("../img/star.png");
+  background-image: url(../img/star.png);
   background-repeat: repeat-x;
   margin: 0;
   margin-top: 2px;
@@ -1291,21 +1290,21 @@ a {
 .social-list .twitter::before {
   width: 17px;
   height: 15px;
-  background-image: url("../img/tt.svg");
+  background-image: url(../img/tt.svg);
   background-size: 17px 15px;
 }
 
 .social-list .facebook::before {
   width: 12px;
   height: 22px;
-  background-image: url("../img/fb.svg");
+  background-image: url(../img/fb.svg);
   background-size: 12px 22px;
 }
 
 .social-list .youtube::before {
   width: 20px;
   height: 16px;
-  background-image: url("../img/ytb.svg");
+  background-image: url(../img/ytb.svg);
   background-size: 20px 16px;
 }
 
