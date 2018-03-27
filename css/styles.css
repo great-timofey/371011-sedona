@@ -11,7 +11,7 @@ body {
   padding: 0;
   width: 1200px;
   color: #333333;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
@@ -160,7 +160,7 @@ a {
 .advantages-special::before {
   display: inline-block;
   vertical-align: top;
-  content: '';
+  content: "";
   width: 90px;
   height: 90px;
   background-repeat: no-repeat;
@@ -210,7 +210,7 @@ a {
   height: 1px;
   right: -14px;
   top: 11px;
-  content: '';
+  content: "";
   border-bottom: 1px solid white;
 }
 
@@ -221,7 +221,7 @@ a {
   height: 1px;
   left: -14px;
   top: 11px;
-  content: '';
+  content: "";
   border-bottom: 1px solid white;
 }
 
@@ -250,7 +250,7 @@ a {
   height: 1px;
   right: -14px;
   top: 11px;
-  content: '';
+  content: "";
   border-bottom: 1px solid black;
 }
 
@@ -261,7 +261,7 @@ a {
   height: 1px;
   left: -14px;
   top: 11px;
-  content: '';
+  content: "";
   border-bottom: 1px solid black;
 }
 
@@ -290,7 +290,7 @@ a {
   height: 100%;
   right: 0;
   top: 0;
-  content: '';
+  content: "";
   background-image: url("../img/real-city.jpg");
   background-position: center;
   background-size: cover;
@@ -307,7 +307,7 @@ a {
   height: 100%;
   left: 0;
   top: 0;
-  content: '';
+  content: "";
   background-image: url("../img/dev-bridge.jpg");
   background-position: center;
   background-size: cover;
@@ -701,7 +701,7 @@ a {
 .trip-index-button::after {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -792,7 +792,7 @@ a {
   background-repeat: no-repeat;
   width: 27px;
   height: 24px;
-  content: '';
+  content: "";
 }
 
 .filters-set input[type=checkbox]:checked + label::before {
@@ -864,7 +864,7 @@ a {
 }
 
 .price-controls::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   height: 22px;
@@ -992,7 +992,7 @@ a {
   bottom: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
-  content: '';
+  content: "";
   background-image: url(../img/arrow.png);
 }
 
@@ -1004,7 +1004,7 @@ a {
   bottom: 50%;
   right: -10px;
   transform: translate(-50%, 50%) rotate(180deg);
-  content: '';
+  content: "";
   background-image: url(../img/arrow.png);
 }
 
@@ -1049,7 +1049,7 @@ a {
   border: none;
   opacity: 1;
   color: #81b3d2;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -1285,7 +1285,7 @@ a {
   bottom: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
-  content: '';
+  content: "";
 }
 
 .social-list .twitter::before {
