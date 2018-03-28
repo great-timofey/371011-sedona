@@ -18,7 +18,6 @@ showButton.addEventListener("click", function(e) {
     form.classList.add("trip-form-show");
     form.classList.remove("trip-form-error");
   }
-  console.log(form.classList);
 });
 
 form.addEventListener("submit", function(e) {

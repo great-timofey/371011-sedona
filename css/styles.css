@@ -170,6 +170,7 @@ a {
 
 .advantages-special-header {
   margin: 0;
+  hyphens: auto;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
@@ -194,6 +195,7 @@ a {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+  hyphens: auto;
 }
 
 .advantages-item-number {
@@ -231,19 +233,19 @@ a {
   line-height: 21px;
 }
 
-.advantages-item:nth-last-child(1), .advantages-item:nth-last-child(2), .advantages-item:nth-last-child(3) {
+.advantages-item:nth-child(6), .advantages-item:nth-child(7), .advantages-item:nth-child(8) {
   padding: 48px 68px 56px;
 }
 
-.advantages-item:nth-last-child(1) .advantages-item-header, .advantages-item:nth-last-child(2) .advantages-item-header, .advantages-item:nth-last-child(3) .advantages-item-header {
+.advantages-item:nth-child(6) .advantages-item-header, .advantages-item:nth-child(7) .advantages-item-header, .advantages-item:nth-child(8) .advantages-item-header {
   margin: 0 70px 22px;
 }
 
-.advantages-item:nth-last-child(1) .advantages-item-number, .advantages-item:nth-last-child(2) .advantages-item-number, .advantages-item:nth-last-child(3) .advantages-item-number {
+.advantages-item:nth-child(6) .advantages-item-number, .advantages-item:nth-child(7) .advantages-item-number, .advantages-item:nth-child(8) .advantages-item-number {
   margin-bottom: 18px;
 }
 
-.advantages-item:nth-last-child(1) .advantages-item-number::before, .advantages-item:nth-last-child(2) .advantages-item-number::before, .advantages-item:nth-last-child(3) .advantages-item-number::before {
+.advantages-item:nth-child(6) .advantages-item-number::before, .advantages-item:nth-child(7) .advantages-item-number::before, .advantages-item:nth-child(8) .advantages-item-number::before {
   display: block;
   position: absolute;
   width: 8px;
@@ -254,7 +256,7 @@ a {
   border-bottom: 1px solid black;
 }
 
-.advantages-item:nth-last-child(1) .advantages-item-number::after, .advantages-item:nth-last-child(2) .advantages-item-number::after, .advantages-item:nth-last-child(3) .advantages-item-number::after {
+.advantages-item:nth-child(6) .advantages-item-number::after, .advantages-item:nth-child(7) .advantages-item-number::after, .advantages-item:nth-child(8) .advantages-item-number::after {
   display: block;
   position: absolute;
   width: 8px;
@@ -339,15 +341,17 @@ a {
 
 .trip-header {
   text-align: center;
-  margin-bottom: 43px;
+  margin: 0 auto 43px;
   font-weight: 400;
   font-size: 14px;
+  width: 70%;
 }
 
 .trip b {
+  width: 70%;
   display: block;
   text-align: center;
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
   font-size: 30px;
 }
 
@@ -360,7 +364,7 @@ a {
   margin: 0 auto;
   padding: 55px;
   width: 458px;
-  height: 285px;
+  min-height: 250px;
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
@@ -377,10 +381,10 @@ a {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(50px);
+    transform: translateY(-50px);
   }
   100% {
-    transform: translateY(1000px);
+    transform: translateY(-2000px);
     display: none;
   }
 }
@@ -390,10 +394,10 @@ a {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(50px);
+    transform: translateY(-50px);
   }
   100% {
-    transform: translateY(1000px);
+    transform: translateY(-2000px);
     display: none;
   }
 }
@@ -403,10 +407,10 @@ a {
     transform: translateY(0px);
   }
   .trip-form-close 50% {
-    transform: translateY(50px);
+    transform: translateY(-50px);
   }
   .trip-form-close 100% {
-    transform: translateY(1000px);
+    transform: translateY(-2000px);
     display: none;
   }
 }
@@ -416,10 +420,10 @@ a {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(50px);
+    transform: translateY(-50px);
   }
   100% {
-    transform: translateY(1000px);
+    transform: translateY(-2000px);
     display: none;
   }
 }
@@ -432,10 +436,10 @@ a {
 
 @-webkit-keyframes show {
   0% {
-    transform: translateY(1000px);
+    transform: translateY(-2000px);
   }
   50% {
-    transform: translateY(50px);
+    transform: translateY(-50px);
   }
   100% {
     transform: translateY(0px);
@@ -444,10 +448,10 @@ a {
 
 @-moz-keyframes show {
   0% {
-    transform: translateY(1000px);
+    transform: translateY(-2000px);
   }
   50% {
-    transform: translateY(50px);
+    transform: translateY(-50px);
   }
   100% {
     transform: translateY(0px);
@@ -456,10 +460,10 @@ a {
 
 @-ms-keyframes show {
   .trip-form-show 0% {
-    transform: translateY(1000px);
+    transform: translateY(-2000px);
   }
   .trip-form-show 50% {
-    transform: translateY(50px);
+    transform: translateY(-50px);
   }
   .trip-form-show 100% {
     transform: translateY(0px);
@@ -468,10 +472,10 @@ a {
 
 @keyframes show {
   0% {
-    transform: translateY(1000px);
+    transform: translateY(-2000px);
   }
   50% {
-    transform: translateY(50px);
+    transform: translateY(-50px);
   }
   100% {
     transform: translateY(0px);
@@ -544,9 +548,12 @@ a {
 }
 
 .trip-form-index .form-index-label {
-  width: 80px;
-  margin-right: 32px;
+  margin-right: 18px;
   padding-left: 0;
+  white-space: nowrap;
+  width: 95px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .trip-form-index .form-index-label-last {
@@ -555,7 +562,7 @@ a {
 }
 
 .trip-form-index .form-index-input {
-  padding: 0;
+  padding: 5px 40px 5px;
   width: 114px;
   height: 38px;
 }
@@ -583,7 +590,10 @@ a {
   display: inline-block;
   vertical-align: middle;
   margin-right: 12px;
+  white-space: nowrap;
   width: 95px;
+  text-overflow: ellipsis;
+  overflow: hidden;
   padding-left: 2px;
 }
 
@@ -593,6 +603,8 @@ a {
   width: 343px;
   height: 36px;
   box-sizing: border-box;
+  padding: 10px;
+  padding-right: 40px;
 }
 
 .trip-form-item input:hover, .trip-form-item input:hover ~ a {
@@ -654,7 +666,7 @@ a {
   height: 22px;
   position: absolute;
   top: 8px;
-  right: 8px;
+  right: 13px;
 }
 
 .trip-button-calendar:not(:hover) svg, .trip-button-calendar:not(:focus) svg {
@@ -1228,9 +1240,12 @@ a {
 
 .wrapper {
   flex-basis: 33.33%;
+  padding: 20px;
+  padding-top: 0;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: middle;
 }
 
 .hashtag {
@@ -1245,12 +1260,13 @@ a {
   padding: 0;
   list-style: none;
   display: flex;
-  width: 150px;
-  height: 50px;
+  flex-wrap: wrap;
+  max-width: 80%;
 }
 
 .social-list li {
   margin-right: 6px;
+  padding-bottom: 6px;
 }
 
 .social-list li:last-child {
