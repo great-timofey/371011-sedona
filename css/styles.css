@@ -59,6 +59,7 @@ a {
 }
 
 .main-caption-container {
+  background-color: #81b3d2;
   background-image: url(../img/background-mask.png), url(../img/background.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: 0 bottom, 0 -57px;
@@ -77,22 +78,29 @@ a {
   list-style: none;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
-.site-navigation li:first-child {
-  margin-right: 147px;
+.site-navigation li {
+  width: 25%;
 }
 
-.site-navigation li:nth-child(3) {
-  margin-left: auto;
-  margin-right: 164px;
+.site-navigation li:nth-child(2), .site-navigation li:nth-child(2n+4) {
+  margin-left: -25px;
+  margin-right: 25px;
 }
 
-.site-navigation li:first-child, .site-navigation li:nth-child(2) {
+.site-navigation li:nth-child(3), .site-navigation li:nth-child(3n+4) {
+  margin-right: -50px;
+  margin-left: 25px;
+}
+
+.site-navigation li:first-child, .site-navigation li:nth-child(2), .site-navigation li:nth-child(1n+4), .site-navigation li:nth-child(2n+4) {
   text-align: left;
 }
 
-.site-navigation li:nth-child(3), .site-navigation li:last-child {
+.site-navigation li:nth-child(3), .site-navigation li:nth-child(4), .site-navigation li:nth-child(3n+4), .site-navigation li:nth-child(4n) {
   text-align: right;
 }
 
@@ -109,11 +117,11 @@ a {
   opacity: 0.3;
 }
 
-.site-navigation .current a {
+.current a {
   color: #766357;
 }
 
-.site-navigation .current a:hover, .site-navigation .current a:focus {
+.current a:hover, .current a:focus {
   cursor: default;
   color: #766357;
 }
@@ -293,6 +301,7 @@ a {
   right: 0;
   top: 0;
   content: "";
+  background-color: #a6b3a1;
   background-image: url(../img/real-city.jpg);
   background-position: center;
   background-size: cover;
@@ -310,6 +319,7 @@ a {
   left: 0;
   top: 0;
   content: "";
+  background-color: #e4af98;
   background-image: url(../img/dev-bridge.jpg);
   background-position: center;
   background-size: cover;
@@ -337,6 +347,9 @@ a {
   position: relative;
   background-color: white;
   padding-top: 60px;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 292px;
 }
 
 .trip-header {
@@ -754,8 +767,14 @@ a {
 .filters {
   color: #ffffff;
   background: url(../img/filters-background.jpg) no-repeat center;
+  background-color: #746665;
   display: flex;
   padding: 28px 69px 29px 72px;
+}
+
+.filters-checkbox:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filters-checkbox:checked + label::before {
@@ -793,6 +812,7 @@ a {
 
 .filters-set li {
   margin-bottom: 20px;
+  margin-right: 20px;
   position: relative;
 }
 
@@ -967,6 +987,7 @@ a {
   font-weight: 700;
   line-height: 26px;
   min-width: 155px;
+  hyphens: auto;
 }
 
 .results-head span {
@@ -975,8 +996,8 @@ a {
 
 .results-head-directions-sortbuttons {
   height: 30px;
-  width: 50px;
-  margin-left: 450px;
+  width: 43px;
+  margin-left: auto;
   position: relative;
 }
 
@@ -1001,7 +1022,7 @@ a {
   width: 10px;
   height: 10px;
   bottom: 50%;
-  left: 50%;
+  left: 10px;
   transform: translate(-50%, 50%);
   content: "";
   background-image: url(../img/arrow.png);
@@ -1013,7 +1034,7 @@ a {
   width: 10px;
   height: 10px;
   bottom: 50%;
-  right: -10px;
+  right: 0;
   transform: translate(-50%, 50%) rotate(180deg);
   content: "";
   background-image: url(../img/arrow.png);
@@ -1084,6 +1105,7 @@ a {
 
 .results-item {
   display: flex;
+  align-items: stretch;
   border-bottom: 2px solid #f2f2f2;
   padding: 0 72px 30px;
   margin-bottom: 25px;
@@ -1099,6 +1121,7 @@ a {
   font-weight: 700;
   line-height: 26px;
   color: #000000;
+  display: inline-block;
 }
 
 .results-item-face:hover, .results-item-face:focus {
@@ -1127,6 +1150,7 @@ a {
 .results-item-rating {
   display: flex;
   flex-direction: column;
+  align-self: stretch;
   margin-left: auto;
   justify-content: space-between;
 }
@@ -1171,6 +1195,10 @@ a {
 .item-container {
   min-width: 300px;
   margin-bottom: 0;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .description-section {
@@ -1223,6 +1251,12 @@ a {
 .ref-booking:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.map-fallback {
+  position: relative;
+  top: -602px;
+  z-index: 0;
 }
 
 .footer {
