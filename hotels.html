@@ -17,7 +17,7 @@
           <li><a href="info.html">информация</a></li>
           <li><a href="media.html">фото и видео</a></li>
           <li><a href="site-map.html">карта штата </a></li>
-          <li class="current"><a href="#">гостиницы</a></li>
+          <li class="current"><a>гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -90,18 +90,20 @@
           <p class="results-head-finded">Найдено:<span id="finded">3</span></p>
           <h3 class="results-header">Сортировка:</h3>
           <ul class="results-head-sortlist">
-            <li><a class="head-type-sortbutton current">По цене</a></li>
-            <li><a class="head-type-sortbutton">По типу</a></li>
-            <li><a class="head-type-sortbutton">По рейтингу</a></li>
+            <li><a class="head-type-sortbutton current" tabindex="0">По цене</a></li>
+            <li><a class="head-type-sortbutton" tabindex="0">По типу</a></li>
+            <li><a class="head-type-sortbutton" tabindex="0">По рейтингу</a></li>
           </ul>
           <div class="results-head-directions-sortbuttons">
-            <a class="head-direction-sortbutton up"><span class="visually-hidden">Сортировать по возрастанию</span></a>
-            <a class="head-direction-sortbutton down active"><span class="visually-hidden">Сортировать по убыванию</span></a>
+            <a class="head-direction-sortbutton up" tabindex="0"><span class="visually-hidden">Сортировать по возрастанию</span></a>
+            <a class="head-direction-sortbutton down active" tabindex="0"><span class="visually-hidden">Сортировать по убыванию</span></a>
           </div>
         </div>
         <ul class="results-list">
           <li class="results-item">
-            <img src="img/amara.jpg" width="135" height="90" alt="Фотография гостиницы">
+            <p class="results-img-container">
+              <img src="img/amara.jpg" width="135" height="90" alt="Фотография гостиницы">
+            </p>
             <div class="item-container">
               <a class="results-item-face" href="#">
                 <h4 class="results-item-header">Amara Resort & Spa</h4>
@@ -123,7 +125,9 @@
             </div>
           </li>
           <li class="results-item">
-            <img src="img/desinn.jpg" width="135" height="90" alt="Фотография гостиницы">
+            <p class="results-img-container">
+              <img src="img/desinn.jpg" width="135" height="90" alt="Фотография гостиницы">
+            </p>
             <div class="item-container">
               <a class="results-item-face" href="#">
                 <h4 class="results-item-header">Desert Quail Inn</h4>
@@ -145,7 +149,9 @@
             </div>
           </li>
           <li class="results-item">
-            <img src="img/diablo.jpg" width="135" height="90" alt="Фотография гостиницы">
+            <p class="results-img-container">
+              <img src="img/diablo.jpg" width="135" height="90" alt="Фотография гостиницы">
+            </p>
             <div class="item-container">
               <a class="results-item-face" href="#">
                 <h4 class="results-item-header">Villas at Poco Diablo</h4>
