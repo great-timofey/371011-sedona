@@ -561,6 +561,7 @@ a {
           box-sizing: border-box;
   padding: 10px;
   padding-right: 40px;
+  text-transform: uppercase;
 }
 
 .trip-form-item input:hover, .trip-form-item input:hover ~ a {
@@ -623,7 +624,7 @@ a {
 }
 
 .trip-form-index .form-index-input {
-  padding: 5px 40px 5px;
+  padding: 5px 40px 5px 55px;
   width: 114px;
   height: 38px;
   position: relative;
@@ -631,7 +632,7 @@ a {
 
 .trip-form-index .form-index-input:focus {
   border: 2px solid #e5e5e5;
-  padding-left: 40px;
+  padding: 5px 40px 5px 55px;
 }
 
 .trip-form-index .form-index-input:focus ~ .plus {
@@ -692,7 +693,7 @@ a {
   height: 22px;
   position: absolute;
   top: 8px;
-  right: 13px;
+  right: 8px;
 }
 
 .trip-button-submit {
@@ -1236,7 +1237,7 @@ a {
   margin: 0;
   padding: 0;
   margin-right: 30px;
-  max-width: 20%;
+  max-width: 135px;
 }
 
 .rating-stars {
@@ -1337,7 +1338,6 @@ a {
 
 .footer {
   padding-top: 20px;
-  padding-bottom: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
