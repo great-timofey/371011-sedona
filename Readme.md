@@ -1,8 +1,9 @@
 # Личный проект «Седона»
+
+https://great-timofey.github.io/sedona/
 ---
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе "[Профессиональный HTML и CSS, уровень 1]" от https://htmlacademy.ru/
-https://great-timofey.github.io/sedona/
 
 ---
 
